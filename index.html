@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini Bot</title>
+</head>
+<style>
+    body {
+        background-color: lightyellow;
+    } 
+    h1 {
+        Color:#7D0A0A;
+    }
+    label{
+        font-weight:bold;
+        color : Purple;
+    }
+    textarea::placeholder {
+        background-image: linear-gradient(to right , brown , red );
+        color: white;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <center> 
+    <h1>Nandini Bot</h1>
+    <form action="/process" method="POST">
+        <label for="openai_api_key">OpenAI API Key:</label>
+        <input type="text" id="openai_api_key" name="openai_api_key">
+        <br>
+        <br>
+        <left>
+        <label for=" input_text "> ENTER QUESTION:</label><br>
+        <textarea id="input_text" name="input_text" placeholder="Ask any Question with Nandini" rows="4" cols="30"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</center>
+</body>
+</html>
